@@ -1,7 +1,7 @@
-package custom 
+package PACKAGE 
 
 import "fmt"
 
-func demo(){
-	fmt.Println("hiii")
+func demo() string {
+    return "hiii"
 }
