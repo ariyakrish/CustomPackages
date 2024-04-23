@@ -1,6 +1,6 @@
 // mathutil.go
 
-package mathutil
+package github.com/ariyakrish/CustomPackages/main/mathutil
 
 // Add takes two integers and returns their sum.
 func Add(a, b int) int {
