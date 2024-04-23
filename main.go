@@ -14,11 +14,11 @@ func Add(a, b int) int {
 }
 
 // Add takes two integers and returns their sum.
-func CreateFile()  {
+func CreateFile() string {
     _, err := os.Create("package.txt")
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println("File created:", "package.txt")
+    return "File created: package.txt"
 
 }
