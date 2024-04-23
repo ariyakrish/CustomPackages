@@ -13,7 +13,7 @@ func Add(a, b int) int {
 func Sub(a, b int) int {
     return a - b
 }
- 
+
 func CreateFile(FileName string) (*os.File, error) {
     // Check if the file exists
     _, err := os.Stat(FileName)
@@ -30,7 +30,7 @@ func CreateFile(FileName string) (*os.File, error) {
         return nil, err
     }
  
-    // Ensure the file is closed when the function returns
+
     defer file.Close()
  
     return file, nil
