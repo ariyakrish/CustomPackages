@@ -4,7 +4,6 @@ package CustomPackages
 
 import  ( "os"
 "log"
-"fmt"
 
 )
 
@@ -17,7 +16,7 @@ func Add(a, b int) int {
 func CreateFile() string {
     _, err := os.Create("package.txt")
     if err != nil {
-        log.Fatal(err)
+        return err
     }
     return "File created: package.txt"
 
