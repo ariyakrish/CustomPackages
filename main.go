@@ -13,7 +13,9 @@ func Add(a, b int) int {
     return a + b
 }
 func Sub(a, b int) int {
+    fmt.Println("return")
     return a - b
+
 }
 
 
@@ -24,7 +26,7 @@ func CreateFile(File string){
 
     f, err := os.Create(File)
     if err != nil {
-        log.Fatal(err)
+        log.Fatal(err) 
     }
     defer f.Close()
     fmt.Println("File created:", f.Name())
