@@ -4,6 +4,8 @@ package CustomPackages
 
 import (
     "os"
+    "log"
+    "fmt"
 )
 
 // Add takes two integers and returns their sum.
