@@ -12,6 +12,7 @@ import (
 func Add(a, b int) int {
     return a + b
 }
+
 func Sub(a, b int) int {
     fmt.Println("return")
     return a - b
@@ -19,17 +20,17 @@ func Sub(a, b int) int {
 }
 
 
-func CreateFile(File string){
+func CreateFile(){
     
 
     
 
-    f, err := os.Create(File)
+    f, err := os.Create("File.txt")
     if err != nil {
         log.Fatal(err) 
     }
     defer f.Close()
-    fmt.Println("File created:", f.Name())
+    fmt.Println("File created:")
     
 }
 
